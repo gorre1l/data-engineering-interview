@@ -86,4 +86,4 @@ conn.commit()
 cursor.close()
 conn.close()
 
-print("✅ Test data inserted successfully!")
+print("Test data inserted successfully!")

@@ -11,7 +11,7 @@ k8s_resource(
 
 local_resource(
     "init_db",
-    "PGPASSWORD=password psql -U user -d postgres -h localhost -p 5432 -f ./fhir/ddl/fhir_database.sql",
+    "set PGPASSWORD=password psql -U user -d postgres -h localhost -p 5432 -f ./fhir/ddl/fhir_database.sql",
     trigger_mode=TRIGGER_MODE_MANUAL,
     resource_deps=['db']
 )
